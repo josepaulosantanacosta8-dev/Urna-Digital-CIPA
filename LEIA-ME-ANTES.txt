@@ -1,0 +1,36 @@
+URNA DIGITAL CIPA — PROTÓTIPO INICIAL
+=====================================
+
+Este é um projeto Android inicial, com:
+- cadastro de candidatos por número, nome e foto;
+- votação por identificador, com bloqueio local de identificador repetido;
+- contagem automática;
+- painel administrativo com senha inicial 1234;
+- abrir/encerrar votação;
+- redefinição de votos e troca de senha.
+
+ATENÇÃO:
+- É um protótipo local, não auditado e ainda não compilado/testado nesta entrega.
+- Os dados ficam no aparelho. Não existe sincronização entre vários celulares.
+- O bloqueio de voto duplicado não impede fraude se alguém apagar os dados do aplicativo,
+  reinstalar o app ou alterar o aparelho.
+- A senha inicial 1234 é pública e deve ser alterada imediatamente.
+- Não use em eleição oficial sem testes, proteção de dados, procedimento de auditoria
+  e aprovação da organização responsável.
+- A contagem não inclui votos nulos/brancos e não exporta relatório nesta primeira versão.
+
+COMO GERAR O APK PELO CELULAR:
+1. Crie uma conta gratuita em https://github.com se ainda não tiver.
+2. No GitHub, crie um repositório novo chamado Urna-Digital-CIPA.
+3. Envie o conteúdo desta pasta para o repositório (não envie a pasta ZIP como um
+   único arquivo; extraia primeiro no celular ou use o upload de arquivos do GitHub).
+4. Abra a aba Actions do repositório.
+5. Se pedir confirmação, habilite Actions.
+6. Abra "Build Urna Digital CIPA APK" e toque em Run workflow.
+7. Quando terminar com sucesso, abra a execução e baixe o artefato
+   "Urna-Digital-CIPA-APK".
+8. Extraia o ZIP baixado e toque no arquivo app-debug.apk para instalar.
+   O Android poderá pedir permissão para instalar apps dessa fonte.
+
+O fluxo de compilação usa GitHub Actions e Gradle. A geração real do APK só estará
+confirmada quando uma execução terminar com sucesso e o artefato puder ser baixado.
