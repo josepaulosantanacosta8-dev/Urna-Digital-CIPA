@@ -159,13 +159,13 @@ class MainActivity : Activity() {
     private fun showAdminLogin() {
         val root = layout("Acesso do administrador")
         root.addView(TextView(this).apply {
-            text = "Senha inicial: 1234. Altere-a no painel após entrar."
+            text = "Senha inicial: 202026. Altere-a no painel após entrar."
             textSize = 14f; setPadding(0, 0, 0, 8)
         })
         val pass = field("Senha administrativa", true)
         root.addView(pass)
         button(root, "Entrar") {
-            val expected = prefs.getString("admin_password", "1234") ?: "1234"
+            val expected = prefs.getString("admin_password", "202026") ?: "202026"
             if (pass.text.toString() == expected) showAdmin() else toast("Senha incorreta.")
         }
         button(root, "Voltar") { showHome() }
